@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<title>Marin Salinas</title>
 	<link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
-	<link type="text/css" rel="stylesheet" href="stylesheet.css" />
-	<link rel="shortcut icon" href="img/favicon.ico" /> 
+	<link type="text/css" rel="stylesheet" href="lib/stylesheet.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<script <script type="text/javascript" src="lib/lib.js"></script>
 </head>
 <body>
 		<header id="topBar">
@@ -66,9 +67,11 @@
 				</div>
 			</div>	
 		</section>
-	<footer>
-		<p><small>2013 - Propiedad de Marin Salinas</small></p>
-		<p><small><?php echo "Última actualización: " . date ("F d, Y.", getlastmod());?></small>
-	</footer>
+	<footer><small>
+		<p>2013 - Propiedad de Marin Salinas</p>
+		<!--<p><?php echo "Última actualización: " . date ("F d, Y.", getlastmod());?></p>-->
+		<p><script>
+		document.write(lastMod()) </script></p>
+	</small></footer>
 </body>
 </html>

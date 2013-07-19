@@ -47,7 +47,7 @@ footer{
 }
 
 #perfil{
-	background: url("img/perfil.jpg");
+	background: url("../img/perfil.jpg");
 	background-size: 150px;
 	border: 4px solid #1A4553;
 	width: 150px;
@@ -142,45 +142,45 @@ footer{
 }
 
 #twitter a{
-	background: url("img/twittericon1.png") top no-repeat;
+	background: url("../img/twittericon1.png") top no-repeat;
 	background-size: 51px;
 	display: inline-block;
 }
 
 #twitter a:hover{
-	background: url("img/twittericon2.png") top no-repeat;
+	background: url("../img/twittericon2.png") top no-repeat;
 	background-size: 51px;
 }
 
 #facebook a{
-	background: url("img/faceicon1.png") top no-repeat;
+	background: url("../img/faceicon1.png") top no-repeat;
 	background-size: 51px;
 	display: inline-block;
 }
 
 #facebook a:hover{
-	background: url("img/faceicon2.png") top no-repeat;
+	background: url("../img/faceicon2.png") top no-repeat;
 	background-size: 51px;
 }
 
 #gmail a{
-	background: url("img/gmailicon1.png") top no-repeat;
+	background: url("../img/gmailicon1.png") top no-repeat;
 	background-size: 51px;
 	display: inline-block;
 }
 
 #gmail a:hover{
-	background: url("img/gmailicon2.png") top no-repeat;
+	background: url("../img/gmailicon2.png") top no-repeat;
 	background-size: 51px;
 }
 
 #github a{
-	background: url("img/githubicon1.png") top no-repeat;
+	background: url("../img/githubicon1.png") top no-repeat;
 	background-size: 51px;
 	display: inline-block;
 }
 
 #github a:hover{
-	background: url("img/githubicon2.png") top no-repeat;
+	background: url("../img/githubicon2.png") top no-repeat;
 	background-size: 51px;
 }
