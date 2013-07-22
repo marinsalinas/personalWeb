@@ -41,6 +41,9 @@ footer{
 	text-align: center;
 }
 
+#textPr article {
+	padding-top: 10px;
+}
 
 #navi{
 	display: none;
