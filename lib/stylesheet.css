@@ -46,7 +46,37 @@ footer{
 }
 
 #navi{
+	background: #396371;
+	border-radius: 8%;
+	color:#DDEDF2;
+	display: inline-block;
+	font-size: 2em;
+	position: absolute;
+	padding: 5px;
+	margin: 0px;
+	top: 101px;
+	right: 0%;
+	width: 13%;
+	text-align: center;
+	
+}
+
+#navi header{
+	font-size: 2em;
+}
+
+#navi ul li a{ 
+	list-style: none;
+	color:#DDEDF2;
+}
+
+#navi ul{
+	font-size: 0.7em;
 	display: block;
+}
+
+#navi hr{
+	color: #DDEDF2;
 }
 
 #perfil{
