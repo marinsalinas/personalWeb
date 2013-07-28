@@ -8,6 +8,9 @@
 	<link type="text/css" rel="stylesheet" href="lib/stylesheet.css" />
 	<link rel="shortcut icon" href="img/favicon.ico" />
 	<script type="text/javascript" src="lib/lib.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
 </head>
 <body>
 	<header id="topBar">
@@ -62,18 +65,27 @@
 				</div>
 			</div>	
 		</section>
+			<div id="drag" target="Muevelo donde quieras, click para más info :D">
+			<div id="noD" >✚</div>
+				<div class="example-number">
 				<nav id="navi">
-					<header><strong >+</strong></header>
 					<ul>
 						<li><a href="curriculum/">Curriculum Vitae</a></li><hr>
 						<li><a href="acerca-de/">Acerca de</a></li><hr>
 						<li><a href="rel/">Enlaces Relacionados</a></li><hr>
 					</ul>
-			</nav>		
+				</nav>
+			</div>
+			</div>
+			<div class="example-number">52</div>
 	<footer>
 		<p><small>2013 - Propiedad de Marin Salinas</small></p>
 		<p><small><script>document.write(lastMod())</script></small></p>
-		<p><small><script>document.write(document.lastModified)</script></small></p>
 	</footer>
+	<script>
+	$(function(){
+		$('#drag').draggable();
+	});
+	</script>
 </body>
 </html>

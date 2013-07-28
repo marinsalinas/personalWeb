@@ -45,38 +45,59 @@ footer{
 	padding-top: 10px;
 }
 
-#navi{
+#drag{
 	background: #396371;
-	border-radius: 8%;
+	border-radius: 100px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 	color:#DDEDF2;
 	display: inline-block;
-	font-size: 2em;
 	position: absolute;
-	padding: 5px;
 	margin: 0px;
-	top: 101px;
-	right: 0%;
-	width: 13%;
+	top: 30%;
+	left: 0%; 
+	width: 80px;
+	height: 80px;
 	text-align: center;
-	
-}
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	cursor: move;
 
-#navi header{
+}
+	
+
+
+#noD{
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	background: none;
+	border-radius: 100%;
+	padding: 0px;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+	margin: auto;
+	top:25%;
 	font-size: 2em;
+	position: relative;
+
 }
 
 #navi ul li a{ 
-	list-style: none;
-	color:#DDEDF2;
+	list-style:none;
 }
 
 #navi ul{
 	font-size: 0.7em;
-	display: block;
+	display: inline-block;
 }
 
 #navi hr{
 	color: #DDEDF2;
+}
+
+#drag{
+	display:inline-block;
 }
 
 #perfil{
@@ -217,3 +238,36 @@ footer{
 	background: url("../img/githubicon2.png") top no-repeat;
 	background-size: 51px;
 }
+
+/*Cosas raras*/
+.example-number{
+	position: relative;
+	width:200px;
+	height:200px;
+	margin:50px 0 200px;
+	text-align: center;
+	font: 140px/200px Arial, sans-serif;
+	color:#fff;
+	background: #C91F2C;
+}
+
+.example-number:before{
+	content: "";
+position: absolute;
+bottom: -140px;
+right: 0;
+border-width: 0 0 140px 140px;
+border-style: solid;
+border-color: transparent #C91F2C;
+}
+
+.example-number:after{
+	content: "";
+position: absolute;
+bottom: -140px;
+right: 85px;
+border-width: 0 0 140px 55px;
+border-style: solid;
+border-color: transparent #fff;
+}
+  
