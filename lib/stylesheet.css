@@ -1,3 +1,5 @@
+
+
 /* Color Palette de mas obcuro a mas brillo
 1: 1A4553;
 2: 37525B;
@@ -5,269 +7,249 @@
 4: B1E2F2;
 5: DDEDF2;
 */
-*{
-	/*border: 1px dashed blue;*/
-	margin:0px;
-	padding: 0px;
-}
+/*-----TAGS-------*/
+* {
+	margin: 0px; /*border: 1px dashed blue;*/
+	padding: 0px; }
 
 body {
-	font-family: 'Fauna One', serif;
 	background-color: #DDEDF2;
 	color: #1A4553; /*Color de fuente general*/
+	font-family: 'Fauna One', serif;
+	overflow-x: hidden; }
 
-}
+a {
+	color: #1A4553;
+	text-decoration: none; }
 
-a{
- color: #1A4553;
- text-decoration: none;
-}
+	a:hover { color: #396371; }
 
-a:hover{
-	color: #396371;
-}
 
 hr{
 	display: block;
 	height: 1px;
-	border: 0;
 	border-bottom: 2px solid #1A4553;
 	padding: 0;
 	opacity: 0.5;
 	margin-bottom: 10px;
 }
 
-footer{
+footer {
+	margin: 0px auto;
+	max-width: 960px;
 	text-align: center;
-}
+	vertical-align: top; }
 
-#textPr article {
-	padding-top: 10px;
-}
+	footer div {
+		display: inline-block;
+		vertical-align: top; }
 
-#drag{
-	background: #396371;
-	border-radius: 100px;
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-	color:#DDEDF2;
-	display: inline-block;
-	position: absolute;
-	margin: 0px;
-	top: 30%;
-	left: 0%; 
-	width: 80px;
-	height: 80px;
-	text-align: center;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	-webkit-transition: all .3s ease;
-	cursor: move;
-
-}
-	
-
-
-#noD{
-	text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-	background: none;
-	border-radius: 100%;
-	padding: 0px;
-	cursor: pointer;
-	height: 40px;
-	width: 40px;
-	margin: auto;
-	top:25%;
-	font-size: 2em;
+section {
 	position: relative;
+	vertical-align: top; }
 
-}
+/*-----ID's-------*/
+#contenedor2 {
+	margin: 10px auto;
+	max-width: 960px;
+	overflow: hidden;
+	padding: 1em; }
 
-#navi ul li a{ 
-	list-style:none;
-}
-
-#navi ul{
-	font-size: 0.7em;
+#textPr {
 	display: inline-block;
-}
+	text-align: justify;
+	vertical-align: top;
+	width: 70%; }
 
-#navi hr{
-	color: #DDEDF2;
-}
+	#textPr article { padding-top: 10px; }
 
-#drag{
-	display:inline-block;
-}
-
-#perfil{
-	background: url("../img/perfil.jpg");
-	background-size: 150px;
-	border: 4px solid #1A4553;
-	width: 150px;
-	height: 150px;
-	float: left;
-	border-radius: 100%;
+#navi {
 	display: inline-block;
-	margin-right: 10px;
+	left: 3%;
+	margin: 6px;
+	position: relative;
+	text-align: center;
+	top: 0px;
+	width: 22%; }
+
+	#navi ul li {
+		font-size: 1em;
+		list-style: none;
+		padding: 0px;
+		right: 0px;
+		top: 0px; }
+
+	#navi ul { display: inline-block; }
+
+	#navi hr { color: #DDEDF2; }
+
+#perfil {
 	-moz-transition: all .7s ease;
 	-ms-transition: all .7s ease;
 	-o-transition: all .7s ease;
 	-webkit-transition: all .7s ease;
-}
+	background: url("../img/perfil.jpg");
+	background-size: 150px;
+	border-radius: 100%;
+	border: 4px solid #1A4553;
+	display: inline-block;
+	float: left;
+	height: 150px;
+	margin-right: 10px;
+	width: 150px; }
 
-#perfil:hover{
-	transform:rotate(360deg);
-	-ms-transform:rotate(360deg); /* IE 9 */
-	-webkit-transform:rotate(360deg); /* Safari and Chrome */
-}
+	#perfil:hover {
+		-ms-transform: rotate(360deg); /* IE 9 */
+		-webkit-transform: rotate(360deg); /* Safari and Chrome */
+		transform: rotate(360deg); }
 
-#contenedor2 {
-	width: 90%;
-	max-width: 960px;
-	margin: 10px auto;
-	padding: 1em;
-	overflow: hidden;
-}
-
-#nombretop{
-	text-align: center;
+#nombretop {
 	font-size: 3em;
 	padding-top: 20px;
-}
-
+	text-align: center; }
 
 #topBar {
 	background-color: #396371;
 	font-size: 1em;
-	top: 0px;
+	height: 120px;
 	left: 0px;
 	right: 0px;
-	height: 120px;
-}
+	top: 0px; }
 
 #social {
 	position: absolute;
-	right: 100px;
-	top: 50px;	
-}
+	right: 5%;
+	top: 50px; }
 
-#nombretop a{
-	color: white;
-	-webkit-transition: all .4s ease;
+#nombretop a {
 	-moz-transition: all .4s ease;
 	-ms-transition: all .4s ease;
 	-o-transition: all .4s ease;
-}
+	-webkit-transition: all .4s ease;
+	color: white; }
 
-#nombretop a:hover{
-	font-size: 1.4em;
-}
+	#nombretop a:hover { font-size: 1.4em; }
 
-#encabezado h1{
-	font-size: 2.5em;
-}
+#encabezado h1 { font-size: 2.5em; }
 
-#encabezado h2{
+#encabezado h2 {
 	font-weight: normal;
-	padding-bottom: 8px
-}
+	padding-bottom: 8px }
 
-#social li{
-	list-style: none;
+#social li {
 	display: inline-block;
-}
+	list-style: none; }
 
-#social li a {
-	height: 51px;
-	width: 51px;
-	display: inline-block;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-}
+	#social li a {
+		-moz-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		display: inline-block;
+		height: 51px;
+		width: 51px; }
 
-#social li a span{
-	background-color: #365058;
-	text-decoration: none;
-	color: #202B30;
-	display: none;
-}
+		#social li a span {
+			background-color: #365058;
+			color: #202B30;
+			display: none;
+			text-decoration: none; }
 
-#twitter a{
+#twitter a {
 	background: url("../img/twittericon1.png") top no-repeat;
 	background-size: 51px;
-	display: inline-block;
-}
+	display: inline-block; }
 
-#twitter a:hover{
-	background: url("../img/twittericon2.png") top no-repeat;
-	background-size: 51px;
-}
+	#twitter a:hover {
+		background: url("../img/twittericon2.png") top no-repeat;
+		background-size: 51px;	}
 
-#facebook a{
+#facebook a {
 	background: url("../img/faceicon1.png") top no-repeat;
 	background-size: 51px;
-	display: inline-block;
-}
+	display: inline-block; }
 
-#facebook a:hover{
-	background: url("../img/faceicon2.png") top no-repeat;
-	background-size: 51px;
-}
+	#facebook a:hover {
+		background: url("../img/faceicon2.png") top no-repeat;
+		background-size: 51px;}
 
-#gmail a{
+#gmail a {
 	background: url("../img/gmailicon1.png") top no-repeat;
 	background-size: 51px;
-	display: inline-block;
-}
+	display: inline-block; }
 
-#gmail a:hover{
-	background: url("../img/gmailicon2.png") top no-repeat;
-	background-size: 51px;
-}
+	#gmail a:hover {
+		background: url("../img/gmailicon2.png") top no-repeat; 
+		background-size: 51px;	}
 
-#github a{
+#github a {
 	background: url("../img/githubicon1.png") top no-repeat;
 	background-size: 51px;
+	display: inline-block; }
+
+	#github a:hover {
+		background: url("../img/githubicon2.png") top no-repeat; 
+		background-size: 51px;	}
+
+#gpone {
+	bottom: 32px;
 	display: inline-block;
-}
+	margin-left: 85%;
+	padding: 0px;
+	position: relative; }
 
-#github a:hover{
-	background: url("../img/githubicon2.png") top no-repeat;
-	background-size: 51px;
-}
+/*----PARA CREAR LA BURBUJA----*/
+/*--CLASES---*/
+.triangle-border {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; /* css3 */
+	background: #DDEDF2;
+	border-radius: 10px;
+	border: 5px solid #1A4553;
+	color: #333;
+	margin: 1em 0 3em;
+	padding: 15px;
+	position: relative; }
 
-/*Cosas raras*/
-.example-number{
-	position: relative;
-	width:200px;
-	height:200px;
-	margin:50px 0 200px;
-	text-align: center;
-	font: 140px/200px Arial, sans-serif;
-	color:#fff;
-	background: #C91F2C;
-}
+	.triangle-border.left { margin-left: 30px; }
 
-.example-number:before{
-	content: "";
-position: absolute;
-bottom: -140px;
-right: 0;
-border-width: 0 0 140px 140px;
-border-style: solid;
-border-color: transparent #C91F2C;
-}
+	.triangle-border:before {
+		border-color: #1A4553 transparent;
+		border-style: solid;
+		border-width: 20px 20px 0;
+		bottom: -20px; /* value = - border-top-width - border-bottom-width */
+		content: "";
+		display: block; /* reduce the damage in FF3.0 */
+		left: 40px; /* controls horizontal position */
+		position: absolute;
+		width: 0; }
 
-.example-number:after{
-	content: "";
-position: absolute;
-bottom: -140px;
-right: 85px;
-border-width: 0 0 140px 55px;
-border-style: solid;
-border-color: transparent #fff;
-}
+	/* creates the smaller  triangle */
+.triangle-border:after {
+		border-color: #DDEDF2 transparent;
+		border-style: solid;
+		border-width: 13px 13px 0;
+		bottom: -13px; /* value = - border-top-width - border-bottom-width */
+		content: "";
+		display: block; /* reduce the damage in FF3.0 */
+		left: 47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+		position: absolute;
+		width: 0; }
+
+	/* creates the larger triangle */
+.triangle-border.left:before {
+		border-color: transparent #1A4553;
+		border-width: 15px 30px 15px 0;
+		bottom: auto;
+		left: -30px; /* value = - border-left-width - border-right-width */
+		top: 10px; /* controls vertical position */ }
+
+	/* creates the smaller  triangle */
+.triangle-border.left:after {
+		border-color: transparent #DDEDF2;
+		border-width: 9px 21px 9px 0;
+		bottom: auto;
+		left: -21px; /* value = - border-left-width - border-right-width */
+		top: 16px; /* value = (:before top) + (:before border-top) - (:after border-top) */ }
+
   

@@ -7,33 +7,34 @@
 	<link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css' />
 	<link type="text/css" rel="stylesheet" href="lib/stylesheet.css" />
 	<link rel="shortcut icon" href="img/favicon.ico" />
-	<script type="text/javascript" src="lib/lib.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="lib/lib.js"></script>
+	<script type="text/javascript">
 
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-42598206-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();</script>
 </head>
 <body>
 	<header id="topBar">
 		<div id="nombretop"><a href="index.html" title="Página Web de Marín Salinas"><strong>@marinslns</strong></a></div>
-			<aside>
-					<ul id="social">
-						<li id="facebook">
-							<a href="http://www.facebook.com/msalinass" title="Facebook: /msalinass" target="_blank"><span>/msalinass</span></a>
-						</li>
-						<li id="twitter">
-							<a href="http://www.twitter.com/marinslns" title="Twitter: @marinslns" target="_blank"><span>@marinslns</span></a>
-						</li>
-						<li id="gmail">
-							<a href="mailto:m.mslns27@gmail.com" title="Gmail: m.mslns27@gmail.com"><span>m.mslns27@gmail.com</span></a>
-						</li>
-						<li id="github">
-							<a href="http://www.github.com/mslns27" title="Github: /mslns27" target="_blank"><span>/mslns27</span></a>
-						</li>
-					</ul>
-			</aside>	
-		</header>
-		<section>
-		<div id="contenedor2">
+		<aside>
+			<ul id="social">
+				<li id="facebook"><a href="http://www.facebook.com/msalinass" title="Facebook: /msalinass" target="_blank" rel="nofollow"><span>/msalinass</span></a></li>
+				<li id="twitter"><a href="http://www.twitter.com/marinslns" title="Twitter: @marinslns" target="_blank" rel="nofollow"><span>@marinslns</span></a></li>
+				<li id="gmail"><a href="mailto:m.mslns27@gmail.com" title="Gmail: m.mslns27@gmail.com" rel="nofollow"><span>m.mslns27@gmail.com</span></a></li>
+				<li id="github"><a href="http://www.github.com/mslns27" title="Github: /mslns27" target="_blank" rel="nofollow"><span>/mslns27</span></a></li>
+			</ul>
+		</aside>	
+	</header>
+	<section id="contenedor2">
 			<header id="encabezado">
 				<div id="perfil"></div>
 					<h1>Miguel Mar&iacute;n Salinas S&aacute;nchez</h1>
@@ -63,29 +64,29 @@
 						</p>
 					</article>
 				</div>
-			</div>	
-		</section>
-			<div id="drag" target="Muevelo donde quieras, click para más info :D">
-			<div id="noD" >✚</div>
-				<div class="example-number">
-				<nav id="navi">
+				<nav id="navi" class="triangle-border left">
 					<ul>
-						<li><a href="curriculum/">Curriculum Vitae</a></li><hr>
-						<li><a href="acerca-de/">Acerca de</a></li><hr>
-						<li><a href="rel/">Enlaces Relacionados</a></li><hr>
+						<li><a href="curriculum/">Curriculum Vitae</a><hr></li>
+						<li><a href="acerca-de/">Acerca de</a><hr></li>
+						<li><a href="rel/">Enlaces Relacionados</a><hr></li>
 					</ul>
-				</nav>
-			</div>
-			</div>
-			<div class="example-number">52</div>
+	</nav>
+	</section>
 	<footer>
-		<p><small>2013 - Propiedad de Marin Salinas</small></p>
-		<p><small><script>document.write(lastMod())</script></small></p>
+		<div><p><small>2013 - Propiedad de Marin Salinas</small></p>
+		<p><small><script>document.write(lastMod())</script></small></p></div>
+		<!-- Place this tag where you want the +1 button to render. -->
+		<div id="gpone"><div class="g-plusone"></div></div>
+		<!-- Place this tag after the last +1 button tag. -->
+		<script type="text/javascript">
+  			window.___gcfg = {lang: 'es-419'};
+
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
 	</footer>
-	<script>
-	$(function(){
-		$('#drag').draggable();
-	});
-	</script>
 </body>
 </html>
