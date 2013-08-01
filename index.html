@@ -74,21 +74,9 @@
 	</section>
 	<footer>
 		<div><p><small>2013 - Propiedad de Marin Salinas</small></p>
-		<p><small><script>//document.write(lastMod())</script></small></p>
-		<p><small><script>document.write(document.lastModified)</script></small></p></div>
-		<p><small><script>
-		var hoy = new Date();
-		var utc = new Date(hoy.toUTCString());
-		console.log(hoy);
-		var last = new Date(document.lastModified);
-		console.log(last);
-		var dif = utc.getTime() - hoy.getTime();
-		console.log(dif);
-		var mod = new Date(last.getTime() - dif);
- 		console.log(mod);
-		document.write(mod);
+		<p><small><script>document.write(lastMod())</script></small></p>
+		<p><small>Última Actualización: <span id="lm"></span></small></p></div>
 
-	</script></small></p></div>
 		<!-- Place this tag where you want the +1 button to render. -->
 		<div id="gpone"><div class="g-plusone"></div></div>
 		<!-- Place this tag after the last +1 button tag. -->
