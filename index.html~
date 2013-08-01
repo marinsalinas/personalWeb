@@ -49,10 +49,10 @@
 		<div id='textPr'>
 			<article>
 				<header>
-					<h2>Mi Problema con las Last Modified.</h2>
+					<h2>Articulo 1</h2>
 				</header>
 				<p>
-				 	Aquí mostraré paso a paso el gran pequeño problema que tuve a la hora que poner la fecha de la ultima actualización en el footer, el problema surgió a la hora que integrar en JavaScript <em>document.lastModified</em> el cual muestra la fecha en la cual se realizó la última modificación de cada página o documento, en este caso la fecha mostrada es la fecha UTC (Universal Time Coordinated) el cual he tenido problemas en mis computadoras "UNIX like", que muestra una fecha futura. A continuación mostraré una solución básica manipulando fechas en segundos desde el primer segundo de 1 de enero de 1970 entre otras cosas <a href="/problema-fechas"><strong>Ver más.</strong></a> 
+				  Bitters bespoke iPhone retro vegan. Cosby sweater vegan irony keffiyeh bitters. Chillwave hella Carles brunch tofu. Brnch cray iPhone, letterpress semiotics PBR banjo sustainable squid authentic mlkshk. Ugh pitchfork VHS flannel, salvia aesthetic jean shorts mlkshk YOLO Echo Park freegan post-ironic. Umami next level Truffaut blog, sriracha letterpress Williamsburg. Small batch gentrify farm-to-table bicycle rights keytar pitchfork.
 				</p>
 			</article>
 			<article>
@@ -74,19 +74,11 @@
 	</section>
 	<footer>
 		<div><p><small>2013 - Propiedad de Marin Salinas</small></p>
-		<p><small><script>//document.write(lastMod())</script></small></p>
+		<p><small><script>document.write(lastMod())</script></small></p>
 		<p><small><script>document.write(document.lastModified)</script></small></p></div>
 		<p><small><script>
-		var hoy = new Date();
-		var utc = new Date(hoy.toUTCString());
-		console.log(hoy);
-		var last = new Date(document.lastModified);
-		console.log(last);
-		var dif = utc.getTime() - hoy.getTime();
-		console.log(dif);
-		var mod = new Date(last.getTime() - dif);
- 		console.log(mod);
-		document.write(mod);
+		lm = new Date(document.lastModified);
+		document.write(lm);
 
 	</script></small></p></div>
 		<!-- Place this tag where you want the +1 button to render. -->
