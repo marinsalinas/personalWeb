@@ -3,6 +3,7 @@
 header('Content-type: application/json');
 $filename = 'index.html';
 if (file_exists($filename)) {
-    echo json_encode(date("F d, Y H:i:s", filemtime($filename)));
+    //echo json_encode(date("F d, Y H:i:s", filemtime($filename)));
+    echo json_encode(date("U", filemtime($filename)));
 }	
 ?>
